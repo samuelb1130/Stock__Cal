@@ -28,29 +28,44 @@ public class Stock_Calulator {
 			System.out.println("\nHow much was each share in $:     ");
 			String PriceSTR= bread.nextLine();
 			
-			int NumStock = Integer.parseInt(NumSTR);
+			double NumStock = Double.parseDouble(NumSTR);
 			
 			double Price = Double.parseDouble (PriceSTR);
+			
+			double StockPrice = (NumStock *  Price);
 			
 			System.out.println("\nPlease enter the commisson rate on the purches in decimals:     ");
 			String CommissonSTR = bread.nextLine();
 			
-			System.out.println("\nPlease enter the sale price per share:     ");
+			double Commission = Double.parseDouble(CommissonSTR);
+			
+			double Commission_T = (Commission * StockPrice);
+			
+			System.out.println("\nPlease enter the sale price per share in deciamal:     ");
 			String SaleSTR = bread.nextLine();
 			
 			double Commisson = Double.parseDouble (CommissonSTR);
 			
 			double Sales = Double.parseDouble (SaleSTR);
+			
+			double SalePrice = ( Sales * NumStock );
 
 			System.out.println("\nPlease enter the sales commisson rate on the purches in decimals:     ");
 			String S_CommissonSTR = bread.nextLine();
 		
 			double S_Commisson = Double.parseDouble (S_CommissonSTR);
 
+			double SCommission 
 		
 			System.out.println("\nResults:");
 			
-		
+			System.out.println("\nTotal paid for " + NumStock + "shares: $" + StockPrice);
+			
+			System.out.println("\nCommission on purchase: $" + Commission_T);
+			
+			System.out.println("\nTotal sale price for " + NumStock + "shares: $" + SalePrice);
+		 
+			System.out.printlm("\nCommisson on sales purchase: $" + )
 			
 			
 			
