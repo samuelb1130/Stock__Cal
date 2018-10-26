@@ -34,17 +34,16 @@ public class Stock_Calulator {
 			
 			double StockPrice = (NumStock *  Price);
 			
-			System.out.println("\nPlease enter the commisson rate on the purches in decimals:     ");
+			System.out.println("\nPlease enter the commisson rate on the purches:     ");
 			String CommissonSTR = bread.nextLine();
 			
 			double Commission = Double.parseDouble(CommissonSTR);
 			
 			double Commission_T = (Commission * StockPrice);
 			
-			System.out.println("\nPlease enter the sale price per share in deciamal:     ");
+			System.out.println("\nPlease enter the sale price per share:     ");
 			String SaleSTR = bread.nextLine();
 			
-			double Commisson = Double.parseDouble (CommissonSTR);
 			
 			double Sales = Double.parseDouble (SaleSTR);
 			
@@ -55,7 +54,7 @@ public class Stock_Calulator {
 		
 			double S_Commisson = Double.parseDouble (S_CommissonSTR);
 
-			double SCommission 
+			double SCommission = (S_Commisson *  SalePrice);
 		
 			System.out.println("\nResults:");
 			
@@ -65,11 +64,15 @@ public class Stock_Calulator {
 			
 			System.out.println("\nTotal sale price for " + NumStock + "shares: $" + SalePrice);
 		 
-			System.out.printlm("\nCommisson on sales purchase: $" + )
+			System.out.println("\nCommisson on sales purchase: $" + SCommission);
 			
+			double Net_Loss = ( StockPrice + Commission_T + SCommission);
 			
+			double Net_GL = (SalePrice - Net_Loss);
 			
+			System.out.println("\nYou're net gain/loss is: $" + Net_GL);
 			
+			System.out.println("\nEnd");
 			
 			
 			
